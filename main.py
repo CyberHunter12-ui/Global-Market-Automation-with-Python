@@ -54,7 +54,7 @@ class RateChecker:
                 print(f"{tick:<10} | {'Not Found':<15} | ---")
         print("="*75 + "\n")
 
-# --- Main block ---
+# -- Main block --
 if __name__ == "__main__":
     MY_KEY = "ADD YOUR API KEY HERE"  # Replace with your actual API key
     
@@ -86,4 +86,5 @@ if __name__ == "__main__":
                 print("Invalid number. Showing conversion for 1.00 unit.")
 
                 bot.show_conversions(1.0)
+
 
