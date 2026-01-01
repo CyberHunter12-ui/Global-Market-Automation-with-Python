@@ -67,7 +67,7 @@ if __name__ == "__main__":
     if default_bot.get_rates():
         default_bot.show_conversions(10000.0)
     
-    # --- STEP 2: CUSTOM USER INPUT ---
+    # -- STEP 2: CUSTOM USER INPUT --
     user_base = input("Enter your base currency (e.g., USD, EUR, GBP) [Skip for INR]: ").strip().upper()
     if not user_base:
         user_base = "INR"
@@ -84,4 +84,6 @@ if __name__ == "__main__":
                 bot.show_conversions(amt)
             except ValueError:
                 print("Invalid number. Showing conversion for 1.00 unit.")
+
                 bot.show_conversions(1.0)
+
